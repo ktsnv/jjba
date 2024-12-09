@@ -1,13 +1,13 @@
 anychart.onDocumentReady(setTimeout(generate,1));
 let rank = ["F","E","D","C","B","A","Infinite"];
 let stats = ['dp','sp','ra','pe','pr','po'];
-let standPowers = fetchData('data/powers.txt');
-let styles = fetchData('data/styles.txt');
-let species = fetchData('data/species.txt');
-let jobs = fetchData('data/jobs.txt');
-let locations = fetchData('data/places.txt');
-let requiemPowers = fetchData('data/requiem.txt');
-let color = fetchData('data/colors.txt');
+let standPowers = fetchData('Data/powers.txt');
+let styles = fetchData('Data/styles.txt');
+let species = fetchData('Data/species.txt');
+let jobs = fetchData('Data/jobs.txt');
+let locations = fetchData('Data/places.txt');
+let requiemPowers = fetchData('Data/requiem.txt');
+let color = fetchData('Data/colors.txt');
 let standType1 = ["Natural","Artificial"];
 let standType2 = ["Humanoid","Non-Humanoid"];
 
