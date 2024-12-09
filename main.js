@@ -111,6 +111,5 @@ function fetchData(url) {
     console.log(data);
    })
   .then(() => {
-    console.log(data);
    });
 }
