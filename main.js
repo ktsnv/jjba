@@ -108,9 +108,9 @@ function fetchData(url) {
   .then(res => res.text())
   .then(data => {
     return data.split("\n");
+    console.log(data);
    })
   .then(() => {
     console.log(data);
-    generate();
    });
 }
