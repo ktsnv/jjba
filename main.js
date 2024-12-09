@@ -1,4 +1,4 @@
-anychart.onDocumentReady(setTimeout(setup,1));
+anychart.onDocumentReady(setTimeout(generate,1));
 let rank = ["F","E","D","C","B","A","Infinite"];
 let stats = ['dp','sp','ra','pe','pr','po'];
 let standPowers = fetchData('data/powers.txt');
