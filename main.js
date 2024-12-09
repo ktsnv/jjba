@@ -112,6 +112,6 @@ function fetchData(url) {
    })
   .then(() => {
     console.log(temp);
+    return temp;
    });
-  return temp;
 }
