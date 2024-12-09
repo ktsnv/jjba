@@ -111,7 +111,7 @@ function fetchData(url) {
     temp = data.split("\n");
    })
   .then(() => {
-    console.log(temp);
+    //console.log(temp);
     return temp;
    });
 }
