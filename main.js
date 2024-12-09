@@ -104,12 +104,14 @@ function removeCredits() {
 }
 
 function fetchData(url) {
+  let temp;
   fetch(url)
   .then(res => res.text())
   .then(data => {
-    return data.split("\n");
-    console.log(data);
+    temp = data.split("\n");
    })
   .then(() => {
+    console.log(temp);
    });
+  return temp;
 }
