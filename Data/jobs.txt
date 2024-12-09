@@ -1,0 +1,14 @@
+Dentist
+Doctor
+Construction Worker
+Student
+Chef
+Writer
+Comic Book Artist
+Speedwagon Foundation
+Fruit Seller
+Horse Jockey
+Oceanographer
+Prison Guard
+Gang Member
+Priest
