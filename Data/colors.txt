@@ -1,0 +1,14 @@
+Red
+Orange
+Yellow
+Green
+Teal
+Blue
+Indigo
+Purple
+Magenta
+Pink
+Brown
+Gray
+White
+Black
