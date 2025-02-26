@@ -12,9 +12,9 @@ function generate() {
  header("Stand User: " + person);
  header("Stand: " + stand);
  header("Ability: ");
- let power = aiText("Make a single power for a stand from JJBA named: " + stand);
+ let power = aiText("Make a power for a stand from JJBA named while fitting everything in a single sentence, don't say anything other than the power: " + stand);
  header("Colors: ");
- let color = aiText("Give me a color scheme for a stand from JJBA named: " + stand);
+ let color = aiText("Give me a color scheme for a stand from JJBA named while fitting everything in a single sentence, don't say anything other than the colors: " + stand);
  header("Destructive Power: "+ rank[stats[0]]);
  header("Speed: "+ rank[stats[1]]);
  header("Range: "+ rank[stats[2]]);
