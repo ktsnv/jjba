@@ -1,6 +1,6 @@
 setTimeout(generate,1);
-let rank = [F,E,D,C,B,A,S];
 function generate() {
+ let rank = ['F','E','D','C','B','A','S'];
  let person = prompt("Please enter your name", "");
  let stand = prompt("Please enter your stand's name", "");
  let stats = [random(1,7),random(1,7),random(1,7),random(1,7),random(1,7),random(1,7)];
