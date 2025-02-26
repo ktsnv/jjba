@@ -1,4 +1,5 @@
 setTimeout(generate,1);
+let flag = false;
 function generate() {
  let rank = ['F','E','D','C','B','A','S'];
  let person = prompt("Please enter your name", "");
@@ -21,7 +22,7 @@ function generate() {
  header("Persistence: "+ rank[stats[3]]);
  header("Precision: "+ rank[stats[4]]);
  header("Potential: "+ rank[stats[5]]);
- let flag = false;
+ 
  wait();
 }
 function wait() {
