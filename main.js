@@ -1,4 +1,5 @@
 setTimeout(generate,1);
+import * as fs from 'fs';
 let power;
 let color;
 let stand;
@@ -34,7 +35,19 @@ function wait() {
    setTimeout(wait, 100);
   }
   else {
-    image("A different and unique stand from JJBA named " + stand + " in a Jojo's Bizarre Adventure style. Its color scheme being: " + color + " and its power being: " + power);
+    let readText;
+    fs.readFile(power, (err, data) => {
+    if (err) throw err;
+
+    readText = data.toString()
+    });
+    let readText2;
+    fs.readFile(color, (err, data) => {
+    if (err) throw err;
+
+    readText2 = data.toString()
+    });
+    image("A different and unique stand from JJBA named " + stand + " in a Jojo's Bizarre Adventure style. Its color scheme being: " + readText2 + " and its power being: " + readText);
   }
 }
 function lineBreak() {
