@@ -21,7 +21,16 @@ function generate() {
  header("Persistence: "+ rank[stats[3]]);
  header("Precision: "+ rank[stats[4]]);
  header("Potential: "+ rank[stats[5]]);
- image("A different and unique stand from JJBA named " + stand + " in a Jojo's Bizarre Adventure style. Its color scheme being: " + color + " and its power being: " + power);
+ let flag = false;
+ wait();
+}
+fucntion wait() {
+  if (flag == false) {
+   setTimeout(wait, 100);
+  }
+  else {
+    image("A different and unique stand from JJBA named " + stand + " in a Jojo's Bizarre Adventure style. Its color scheme being: " + color + " and its power being: " + power);
+  }
 }
 function lineBreak() {
   const container = document.querySelector("#container");
