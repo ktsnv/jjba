@@ -24,7 +24,7 @@ function generate() {
  let flag = false;
  wait();
 }
-fucntion wait() {
+function wait() {
   if (flag == false) {
    setTimeout(wait, 100);
   }
