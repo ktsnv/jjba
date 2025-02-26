@@ -37,7 +37,7 @@ function header(arr) {
 function image(prompt) {
   const container = document.querySelector("#container");
   const image = document.createElement("img");
-  image.src = "https://image.pollinations.ai/prompt/"+encodeURIComponent(prompt)+'?width=${540}&height=${540}&model=${"Flux-cablyai"}';
+  image.src = "https://image.pollinations.ai/prompt/"+encodeURIComponent(prompt)+'?width=${540}&height=${540}&model=${"Flux-realism"}';
   container.append(image);
 }
 function aiText(prompt) {
