@@ -42,7 +42,7 @@ function image(prompt) {
 }
 function aiText(prompt) {
   const container = document.querySelector("#container");
-  const text = document.createElement("h3");
+  const text = document.createElement("embed");
   text.src = "https://text.pollinations.ai/prompt/"+encodeURIComponent(prompt);
   container.append(text);
 }
