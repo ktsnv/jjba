@@ -1,10 +1,11 @@
 setTimeout(generate,1);
 let power;
 let color;
+let stand;
 function generate() {
  let rank = ['F','E','D','C','B','A','S'];
  let person = prompt("Please enter your name", "");
- let stand = prompt("Please enter your stand's name", "");
+ stand = prompt("Please enter your stand's name", "");
  let stats = [random(0,6),random(0,6),random(0,6),random(0,6),random(0,6),random(0,6)];
  if (stats[5] == 6)
  {
