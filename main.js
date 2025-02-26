@@ -15,8 +15,10 @@ function generate() {
  header("Stand: " + stand);
  header("Ability: ");
  power = aiText("Make a power for a stand from JJBA named " + stand + ", while fitting everything in a single sentence, don't say anything other than the power: ");
+ insertText(power);
  header("Colors: ");
  color = aiText("Give me a color scheme for a stand from JJBA named " + stand + ", while fitting everything in a single sentence, don't say anything other than the colors: ");
+ insertText(color);
  header("Destructive Power: "+ rank[stats[0]]);
  header("Speed: "+ rank[stats[1]]);
  header("Range: "+ rank[stats[2]]);
@@ -52,9 +54,12 @@ function image(prompt) {
   container.append(image);
 }
 function aiText(prompt) {
+  return "https://text.pollinations.ai/prompt/"+encodeURIComponent(prompt);
+}
+function insertText(arr) {
   const container = document.querySelector("#container");
   const text = document.createElement("embed");
-  text.src = "https://text.pollinations.ai/prompt/"+encodeURIComponent(prompt);
+  text.src = arr;
   container.append(text);
 }
 function random(min,max) {
