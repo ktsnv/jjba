@@ -21,7 +21,7 @@ function generate() {
  header("Persistence: "+ rank[stats[3]]);
  header("Precision: "+ rank[stats[4]]);
  header("Potential: "+ rank[stats[5]]);
- image("A stand from JJBA named " + stand + " in a 2d seinen manga style with heavy shading. Its color scheme being: " + color + " and its power being: " + power);
+ image("A unique stand from JJBA named " + stand + " in a 2d seinen manga style with heavy shading. Its color scheme being: " + color + " and its power being: " + power);
 }
 function lineBreak() {
   const container = document.querySelector("#container");
