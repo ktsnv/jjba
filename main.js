@@ -43,7 +43,7 @@ function image(prompt) {
 function aiText(prompt) {
   const container = document.querySelector("#container");
   const text = document.createElement("h3");
-  text.textContent = "https://text.pollinations.ai/prompt/"+encodeURIComponent(prompt);
+  text.src = "https://text.pollinations.ai/prompt/"+encodeURIComponent(prompt);
   container.append(text);
 }
 function random(min,max) {
