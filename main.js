@@ -1,5 +1,4 @@
 setTimeout(generate,1);
-import * as fs from 'fs';
 let power;
 let color;
 let stand;
@@ -35,17 +34,23 @@ function wait() {
    setTimeout(wait, 100);
   }
   else {
-    let readText;
-    fs.readFile(power, (err, data) => {
-    if (err) throw err;
-
-    readText = data.toString()
+   let readText;
+    fetch(power)
+   .then(res => res.text())
+   .then(data => {
+    readText = data;
+    })
+   .then(() => {
+     console.log(readText);
     });
-    let readText2;
-    fs.readFile(color, (err, data) => {
-    if (err) throw err;
-
-    readText2 = data.toString()
+   let readText2;
+    fetch(color)
+   .then(res => res.text())
+   .then(data => {
+    readText2 = data;
+    })
+   .then(() => {
+     console.log(readText2);
     });
     image("A different and unique stand from JJBA named " + stand + " in a Jojo's Bizarre Adventure style. Its color scheme being: " + readText2 + " and its power being: " + readText);
   }
