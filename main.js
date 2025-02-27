@@ -30,7 +30,7 @@ function generate() {
  wait();
 }
 function wait() {
-  if (power == 'undefined' || color == 'undefined') {
+  if (power === undefined || color === undefined) {
    setTimeout(wait, 100);
   }
   else {
