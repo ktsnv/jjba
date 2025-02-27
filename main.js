@@ -2,6 +2,9 @@ setTimeout(generate,1);
 let power;
 let color;
 let stand;
+let readText;
+let readText2;
+
 function generate() {
  let rank = ['F','E','D','C','B','A','S'];
  let person = prompt("Please enter your name", "");
@@ -26,15 +29,6 @@ function generate() {
  header("Persistence: "+ rank[stats[3]]);
  header("Precision: "+ rank[stats[4]]);
  header("Potential: "+ rank[stats[5]]);
- 
- wait();
-}
-function wait() {
-  if (power === undefined || color === undefined) {
-   setTimeout(wait, 100);
-  }
-  else {
-   let readText;
     fetch(power)
    .then(res => res.text())
    .then(data => {
@@ -43,7 +37,6 @@ function wait() {
    .then(() => {
      console.log(readText);
     });
-   let readText2;
     fetch(color)
    .then(res => res.text())
    .then(data => {
@@ -52,6 +45,14 @@ function wait() {
    .then(() => {
      console.log(readText2);
     });
+ wait();
+}
+function wait() {
+  if (power === undefined || color === undefined) {
+   setTimeout(wait, 100);
+  }
+  else {
+   
     image("A different and unique stand from JJBA named " + stand + " in a Jojo's Bizarre Adventure style. Its color scheme being: " + readText2 + " and its power being: " + readText);
   }
 }
