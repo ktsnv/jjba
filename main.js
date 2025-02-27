@@ -21,7 +21,7 @@ function generate() {
  power = aiText("Make a power for a stand from JJBA named " + stand + ", while fitting everything in a single sentence, don't say anything other than the power: ");
  insertText(power);
  header("Colors: ");
- color = aiText("Give me a color scheme for a stand from JJBA named " + stand + ", while fitting everything in a single sentence, don't say anything other than the colors: ");
+ color = aiText("Give me a color scheme for a stand from JJBA named " + stand + ", while fitting everything in a single sentence, don't say anything other than the colors, and don't be too descriptive: ");
  insertText(color);
  header("Destructive Power: "+ rank[stats[0]]);
  header("Speed: "+ rank[stats[1]]);
@@ -53,7 +53,7 @@ function wait() {
   }
   else {
    
-    image("A different and unique stand from JJBA named " + stand + " in a Jojo's Bizarre Adventure style. Its color scheme being: " + readText2 + " and its power being: " + readText);
+    image("A different and unique stand from JJBA named " + stand + " in a Jojo's Bizarre Adventure drawn style. Its color scheme being: " + readText2 + " and its power being: " + readText);
   }
 }
 function lineBreak() {
